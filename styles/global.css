@@ -31,6 +31,19 @@
   --text-sm: 400 14px/140% var(--font-family-mavenPro);
 }
 
-h1 {
+
+.subtitle {
+  font: var(--subtitle);
+}
+
+.title-lg {
   font: var(--title-lg);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-md {
+  font: var(--text-md);
 }
