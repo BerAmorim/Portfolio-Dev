@@ -1,0 +1,118 @@
+.intro {
+  position: absolute;
+  z-index: -1;
+}
+
+.intro img {
+  width: 100vw;
+  height: 750px;
+  object-fit:cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  padding: 120px 163px 57px 163px;
+  text-align: center;
+}
+
+.avatar {
+  width: 112px;
+  height: 112px;
+
+  position: relative;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+}
+
+.avatar .imgTag {
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+
+  z-index: 1;
+}
+
+.user {
+  width: 96px;
+  height: 96px;
+  margin: 8px;
+}
+
+.border {
+  width: 96px;
+  height: 96px;
+
+  border: 2px solid var(--red-color);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border img {
+  width: 87px;
+  height: 87px;
+
+  margin: 4px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.tags .text-md {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--gray300-color);
+  
+}
+
+.tags .text-md img {
+  width: 24px;
+  height: 24px;
+}
+
+img[alt="two arrows pointing down"] {
+  display: block;
+
+  width: 32px;
+  height: 32px;
+
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+}
