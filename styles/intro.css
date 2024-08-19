@@ -1,7 +1,6 @@
 #intro {
   position: relative;
   width: 100vw;
-  /*height: 750px;*/
 
   display: flex;
   flex-direction: column;
@@ -27,21 +26,18 @@
   padding: 120px 163px 94px 163px;
 }
 
-.header{
+#intro header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .avatar {
   width: 112px;
   height: 112px;
   position: relative;
-  margin-bottom: 40px;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .avatar .imgTag {
