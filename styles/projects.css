@@ -1,0 +1,125 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+
+  padding: 72px 120px 144px;
+
+  background-color: var(--gray200-color);
+}
+
+#projects header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+
+    .subtitle {
+      color: var(--red-color);
+    }
+}
+
+#projects .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  justify-content: center;
+  max-width: calc(100% - 80px);
+  overflow: hidden;
+}
+
+#projects .grid .card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 12px;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 12px;
+
+  background-color: var(--gray300-color);
+}
+
+
+#projects .grid .card .card-text {
+  padding: 4px;
+}
+
+#projects .grid .card img {
+  
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Media Queries for Responsiveness */
+ 
+
+/* Additional Breakpoints for Smoother Transitions */
+@media (max-width: 1280px) {
+  #projects {
+    padding: 60px 60px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 1024px) {
+  #projects {
+    padding: 50px 40px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 900px) {
+  #projects {
+    padding: 45px 30px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: calc(100% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 20px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 640px) {
+  #projects {
+    padding: 35px 15px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: calc(100% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  #projects {
+    padding: 30px 10px 144px;
+  }
+  #projects .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: calc(100% - 10px);
+    gap: 16px;
+  }
+  #projects .grid .card {
+    max-width: 100%;
+  }
+}

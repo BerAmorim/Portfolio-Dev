@@ -1,6 +1,6 @@
 #intro {
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -136,4 +136,27 @@ img[alt="two arrows pointing down"] {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 57px;
+}
+
+@media (max-width: 480px) {
+  .info {
+    padding: 30px 15px 30px 15px; /* Further adjust padding for mobile devices */
+    gap: 30px; /* Reduce gap for better spacing on mobile devices */
+  }
+
+  #intro header {
+    gap: 15px; /* Reduce gap for header on mobile devices */
+  }
+
+  .text {
+    padding: 0 10px; /* Reduce padding for text on mobile devices */
+  }
+
+  .tags .text-md {
+    padding: 6px 12px; /* Adjust padding for tags */
+  }
+
+  img[alt="two arrows pointing down"] {
+    margin-bottom: 10px;
+  }
 }
