@@ -1,9 +1,5 @@
 #contact {
-  background-image: url('../assets/Background_Contacts.png');
-  background-size: cover; /* Ensure the background image covers the entire section */
-  background-position: center; 
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-
+  position: relative;
   padding: 128px 120px 200px;
   width: 100%;
   height: 100%;
@@ -13,6 +9,14 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
+} 
+
+#contact img[alt="background image"] {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  inset: 0;
 }
 
 #contact header {
@@ -21,6 +25,8 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  text-align: center;
 }
 
 #contact header .subtitle {
@@ -37,6 +43,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  width: 400px;
 }
 
 #contact .contacts a {
@@ -45,7 +52,7 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  width: 400px;
+  width: 100%;
 
   border-radius: 8px;
   background-color: var(--gray300-color);
@@ -53,7 +60,46 @@
   text-decoration: none;
 }
 
+#contact .contacts a p{
+  width: 100%;
+  color: var(--gray500-color);
+}
+
 #contact .contacts a img {
   width: 28px;
   height: 28px;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 120px 100px 170px;
+  }
+
+  #contact .contacts {
+    width: 350px;
+  }
+}
+
+@media (max-width: 564px) {
+  #contact {
+    padding: 100px 80px 160px;
+  }
+
+  #contact .contacts {
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 80px 70px 150px;
+  }
+
+  #contact .contacts {
+    width: 240px;
+  }
+
+  #contact .contacts a {
+    padding: 10px;
+  }
 }

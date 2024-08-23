@@ -74,7 +74,7 @@
 /* Additional Breakpoints for Smoother Transitions */
 @media (max-width: 1280px) {
   #projects {
-    padding: 60px 60px 144px;
+    padding: 70px 60px 140px;
   }
   #projects .grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -84,7 +84,7 @@
 
 @media (max-width: 1024px) {
   #projects {
-    padding: 50px 40px 144px;
+    padding: 70px 40px 135px;
   }
   #projects .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -94,7 +94,7 @@
 
 @media (max-width: 900px) {
   #projects {
-    padding: 45px 30px 144px;
+    padding: 70px 30px 130px;
   }
   #projects .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -104,7 +104,7 @@
 
 @media (max-width: 768px) {
   #projects {
-    padding: 40px 20px 144px;
+    padding: 70px 20px 120px;
   }
   #projects .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -114,7 +114,7 @@
 
 @media (max-width: 640px) {
   #projects {
-    padding: 35px 15px 144px;
+    padding: 70px 15px 100px;
   }
   #projects .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -124,7 +124,7 @@
 
 @media (max-width: 480px) {
   #projects {
-    padding: 30px 10px 144px;
+    padding: 70px 10px 80px;
   }
   #projects .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
