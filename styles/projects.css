@@ -32,6 +32,11 @@
   overflow: hidden;
 }
 
+#projects .grid a {
+  text-decoration: none;
+}
+
+
 #projects .grid .card {
   display: flex;
   flex-direction: column;
@@ -43,6 +48,13 @@
   border-radius: 12px;
 
   background-color: var(--gray300-color);
+
+}
+
+#projects .grid .card:hover {
+  border: 1.5px solid var(--gray400-color);
+  transition: 0.2s;
+  gap: 18.5px;
 }
 
 
