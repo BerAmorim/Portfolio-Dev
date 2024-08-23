@@ -70,6 +70,11 @@
   height: 28px;
 }
 
+#contact .contacts a:hover {
+  border: 1.5px solid var(--blue-color);
+  padding: 18.5px;
+}
+
 @media (max-width: 768px) {
   #contact {
     padding: 120px 100px 170px;
